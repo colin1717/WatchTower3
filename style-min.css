@@ -1,47 +1,49 @@
 body {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 .header {
   height: 450px;
   width: 100%;
-  background: url('./watchtower-assets/header-gradient.png') no-repeat;
+  background: url("./watchtower-assets/header-gradient.png") no-repeat;
   background-size: cover;
   padding-top: 20px;
-  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.8);
-}
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.8); }
 
 .logo-div {
   background: url(./watchtower-assets/watchtower-logo.svg) center no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 340px;
-  width: 100%;
-}
+  width: 100%; }
 
 .logo-text {
   color: white;
   font-family: Arial;
   font-size: 30pt;
-  padding-top: 288px;
-}
+  padding-top: 288px; }
 
 .form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  margin: 30px 100px ;
-}
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 100px; }
 
 /* Client name input */
 .client-dropdown {
   height: 50px;
   width: 300px;
   background-color: #003D4D;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   margin-right: 20px;
-  padding-left: 8px;
-}
+  padding-left: 8px; }
 
 .client-dropdown input {
   width: 95%;
@@ -52,22 +54,19 @@ body {
   border: none;
   border-bottom: 1px solid white;
   color: white;
-  font-size: 16pt;
-}
+  font-size: 16pt; }
 
 .client-dropdown input:focus {
-  outline: none;
-}
+  outline: none; }
 
 /* PDP URL input */
 .pdp-input {
   height: 50px;
   width: 700px;
   background-color: #003D4D;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   margin-left: 20px;
-  padding-left: 10px;
-}
+  padding-left: 10px; }
 
 .pdp-input input {
   width: 81%;
@@ -78,12 +77,10 @@ body {
   border: none;
   border-bottom: 1px solid white;
   color: white;
-  font-size: 16pt;
-}
+  font-size: 16pt; }
 
 .pdp-input input:focus {
-  outline: none;
-}
+  outline: none; }
 
 /* Submit Button */
 .submit-button {
@@ -94,15 +91,18 @@ body {
   border: solid 2px #33BCA5;
   margin-right: 8px;
   margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #33BCA5;
   font-family: Arial;
   font-size: 14pt;
   font-weight: lighter;
   padding-top: 6px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-}
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
 
 .submit-button:hover {
   float: right;
@@ -112,20 +112,21 @@ body {
   border: solid 2px #33BCA5;
   margin-right: 8px;
   margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   font-family: Arial;
   font-size: 14pt;
   font-weight: lighter;
   padding-top: 6px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-}
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
 
 /* Results */
-
 .results-display {
   height: 800px;
   width: 100%;
-  background-color: #003D4D;
-}
+  background-color: #003D4D; }
