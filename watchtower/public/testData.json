@@ -1,0 +1,38 @@
+let testData = {
+  'BVQA Container Has Content':false,
+  'BVQA Container Loading':true,
+  'BVRR Container Has Content':true,
+  'BVRR Container Loading':true,
+  'BVRRSummary Container Has Content':false,
+  'BVRRSummary Container Loading':true,
+  'Javascript URL':
+    {
+      msg:"display.ugc.bazaarvoice.com/static/maxtool/en_US/bvapi.js",
+      status:true,
+      title:"Javascript URL"
+    },
+    'Last Modified':
+    {
+      msg: "2017-01-30T17:20:42.134+0000",
+      status: true,
+      title: "Last Modified"
+    },
+
+  'Production Container URL':
+    {
+      msg: "http://www.maxtool.com/container.html",
+      status: true,
+      title: "Production Container URL"
+    },
+
+  'SEO Content Loading': true,
+  'SEO Pagination Working': false,
+  'Staging Container URL':
+    {
+      msg: "http://max-stage.corrastage.com/container.html",
+      status: true,
+      title: "Staging Container URL"
+    }
+}
+
+export default testData;
