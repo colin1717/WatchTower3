@@ -39,6 +39,7 @@ body {
 .client-dropdown {
   height: 50px;
   width: 300px;
+  min-width: 180px;
   background-color: #003D4D;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
   margin-right: 20px;
@@ -65,6 +66,7 @@ body {
 .pdp-input {
   height: 50px;
   width: 700px;
+  min-width: 660px;
   background-color: #003D4D;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
   margin-left: 20px;
@@ -149,7 +151,7 @@ body {
 .castle {
   display: flex;
   flex-direction: column;
-  margin: 15px;
+  margin: 10px;
 }
 
 .castle-pic {
@@ -186,4 +188,38 @@ body {
   border-radius: 20px;
   padding: 4px 10px 0px 10px;
   min-width: 180px;
+}
+
+.message-box::before {
+  height: 43px;
+  width: 43px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  box-sizing: border-box;
+  position: absolute;
+  top:-20%;
+  left: 70%;
+  transform: rotate(45deg);
+  content: "";
+  background-color: #003D4D;
+}
+
+.message-box {
+  position: relative;
+  height: 120px;
+  width: 1000px;
+  border: 2px white solid;
+  margin: auto;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+.message-box-text {
+  font-size: 20pt;
+  padding-top: 40px;
+  color: white;
+}
+
+.warning-text {
+  color: #EE5164;
 }
