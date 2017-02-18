@@ -69,7 +69,35 @@
   background-color: #003D4D;
 }
 
-.message-box-bvapi, .message-box-bvsummary, .message-box-bvrr, .message-box-bvqa, .message-box-bvseo {
+.message-box-staging-container::before {
+  height: 43px;
+  width: 43px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  box-sizing: border-box;
+  position: absolute;
+  top:-20%;
+  left: 31%;
+  transform: rotate(45deg);
+  content: "";
+  background-color: #003D4D;
+}
+
+.message-box-production-container::before {
+  height: 43px;
+  width: 43px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  box-sizing: border-box;
+  position: absolute;
+  top:-20%;
+  left: 63%;
+  transform: rotate(45deg);
+  content: "";
+  background-color: #003D4D;
+}
+
+.message-box-bvapi, .message-box-bvsummary, .message-box-bvrr, .message-box-bvqa, .message-box-bvseo, .message-box-production-container, .message-box-staging-container {
   position: relative;
   height: 120px;
   width: 1000px;

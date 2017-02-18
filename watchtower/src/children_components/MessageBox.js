@@ -14,8 +14,12 @@ class MessageBox extends Component {
       activeTab = "message-box-bvrr";
     } else if (this.props.selected === "BVQA Container") {
       activeTab = "message-box-bvqa";
-    } else {
+    } else if (this.props.selected === "BVAPI"){
       activeTab = "message-box-bvapi";
+    } else if (this.props.selected === "Production Container Page") {
+      activeTab = "message-box-production-container";
+    } else if (this.props.selected === "Staging Container Page") {
+      activeTab = "message-box-staging-container";
     };
 
 
