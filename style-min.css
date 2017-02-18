@@ -131,7 +131,7 @@ body {
 
 /* Results */
 .results-display {
-  height: 800px;
+  height: 900px;
   width: 100%;
   background-color: #003D4D;
   padding-top: 50px;
@@ -193,6 +193,7 @@ body {
   padding: 4px 10px 0px 10px;
   min-width: 180px; }
 
+/* Message-box */
 .message-box::before {
   height: 43px;
   width: 43px;
@@ -223,3 +224,31 @@ body {
 
 .warning-text {
   color: #EE5164; }
+
+/* Collection Features */
+.collection-features {
+  padding-top: 50px; }
+
+.collection-features-text {
+  color: white;
+  font-size: 24pt; }
+
+.collection-features .message-box::before {
+  height: 43px;
+  width: 43px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  box-sizing: border-box;
+  position: absolute;
+  top: -20%;
+  left: 63%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  content: "";
+  background-color: #003D4D; }
+
+footer {
+  background: url("./watchtower-assets/header-gradient.png") no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 100%; }
