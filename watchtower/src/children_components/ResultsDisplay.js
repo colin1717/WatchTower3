@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './css/ResultsDisplay.css';
+import Castle from './Castle';
 
 class ResultsDisplay extends Component {
   render() {
@@ -8,26 +9,12 @@ class ResultsDisplay extends Component {
         <div className="display-features">
           <span className='display-features-text'>Display Features</span>
           <div className="display-features-castles">
-            <div className="castle">
-              <div className="castle-pic"></div>
-              <div className="castle-text">BVAPI</div>
-            </div>
-            <div className="castle">
-              <div className="castle-pic"></div>
-              <div className="castle-text">BV Summary</div>
-            </div>
-            <div className="castle">
-              <div className="castle-pic"></div>
-              <div className="castle-text">BVRR Container</div>
-            </div>
-            <div className="castle">
-              <div className="castle-pic-warning"></div>
-              <div className="castle-text-warning">BVQA Container</div>
-            </div>
-            <div className="castle">
-              <div className="castle-pic"></div>
-              <div className="castle-text">BV SEO</div>
-            </div>
+            <Castle title="BVAPI" />
+            <Castle title="BV Summary" />
+            <Castle title="BVRR Container" />
+
+            <Castle title="BVQA Container" warning='warning' />
+            <Castle title="BVSEO" />
           </div>
 
           <div className="message-box">
