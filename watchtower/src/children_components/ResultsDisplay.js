@@ -4,21 +4,29 @@ import Castle from './Castle';
 import MessageBox from './MessageBox';
 
 class ResultsDisplay extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      activeTab: 'BVAPI'
+    }
+  }
+
   render() {
     return (
       <div className="results-display">
         <div className="display-features">
           <span className='display-features-text'>Display Features</span>
           <div className="display-features-castles">
-            <Castle title="BVAPI" />
-            <Castle title="BVRRSummary" />
-            <Castle title="BVRR Container" />
+            <Castle title="BVAPI" handleClick={this._handleClick.bind(this)}/>
+            <Castle title="BVRRSummary" handleClick={this._handleClick.bind(this)}/>
+            <Castle title="BVRR Container" handleClick={this._handleClick.bind(this)}/>
 
-            <Castle title="BVQA Container" warning='warning' />
-            <Castle title="BVSEO" />
+            <Castle title="BVQA Container" warning='warning' handleClick={this._handleClick.bind(this)}/>
+            <Castle title="BVSEO" handleClick={this._handleClick.bind(this)}/>
           </div>
 
-          <MessageBox selected="BVRRContainer" />
+          <MessageBox selected={this.state.activeTab} />
 
         </div>
 
@@ -43,6 +51,15 @@ class ResultsDisplay extends Component {
 
       </div>
     )
+  }
+
+  _handleClick(title) {
+    console.log(`Clicked ${title}`);
+
+    this.setState({
+      activeTab: title
+    });
+
   }
 }
 

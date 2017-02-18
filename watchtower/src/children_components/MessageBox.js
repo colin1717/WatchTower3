@@ -6,13 +6,13 @@ class MessageBox extends Component {
 
     let activeTab;
 
-    if (this.props.selected == "BVSEO") {
+    if (this.props.selected === "BVSEO") {
       activeTab = "message-box-bvseo";
-    } else if (this.props.selected == "BVRRSummary") {
+    } else if (this.props.selected === "BVRRSummary") {
       activeTab = "message-box-bvsummary";
-    } else if (this.props.selected == "BVRRContainer") {
+    } else if (this.props.selected === "BVRR Container") {
       activeTab = "message-box-bvrr";
-    } else if (this.props.selected == "BVQAContainer") {
+    } else if (this.props.selected === "BVQA Container") {
       activeTab = "message-box-bvqa";
     } else {
       activeTab = "message-box-bvapi";
