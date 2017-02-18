@@ -22,3 +22,99 @@
   font-size: 30pt;
   padding-top: 288px;
 }
+.form-input {
+  display: flex;
+  justify-content: center;
+  margin: 30px 100px ;
+}
+
+/* Client name input */
+.client-dropdown {
+  height: 50px;
+  width: 300px;
+  min-width: 180px;
+  background-color: #003D4D;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  margin-right: 20px;
+  padding-left: 8px;
+}
+
+.client-dropdown input {
+  width: 95%;
+  background-color: #003D4D;
+  padding-top: 10px;
+  padding-left: 6px;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 16pt;
+}
+
+.client-dropdown input:focus {
+  outline: none;
+}
+
+/* PDP URL input */
+.pdp-input {
+  height: 50px;
+  width: 700px;
+  min-width: 660px;
+  background-color: #003D4D;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.pdp-input input {
+  width: 81%;
+  background-color: #003D4D;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 16pt;
+}
+
+.pdp-input input:focus {
+  outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+  float: right;
+  height: 26px;
+  width: 90px;
+  background-color: #003D4D;
+  border: solid 2px #33BCA5;
+  margin-right: 8px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  color: #33BCA5;
+  font-family: Arial;
+  font-size: 14pt;
+  font-weight: lighter;
+  padding-top: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+.submit-button:hover {
+  float: right;
+  height: 24px;
+  width: 90px;
+  background-color: #33BCA5;
+  border: solid 2px #33BCA5;
+  margin-right: 8px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: Arial;
+  font-size: 14pt;
+  font-weight: lighter;
+  padding-top: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}

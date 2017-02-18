@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from './children_components/Header';
+import ResultsDisplay from './children_components/ResultsDisplay';
 
 class App extends Component {
   render() {
     return (
-      <Header />
+      <div>
+        <Header />
+        <ResultsDisplay />  
+      </div>
     );
   }
 }
