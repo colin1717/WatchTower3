@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './css/ResultsDisplay.css';
 import Castle from './Castle';
+import MessageBox from './MessageBox';
 
 class ResultsDisplay extends Component {
   render() {
@@ -10,18 +11,14 @@ class ResultsDisplay extends Component {
           <span className='display-features-text'>Display Features</span>
           <div className="display-features-castles">
             <Castle title="BVAPI" />
-            <Castle title="BV Summary" />
+            <Castle title="BVRRSummary" />
             <Castle title="BVRR Container" />
 
             <Castle title="BVQA Container" warning='warning' />
             <Castle title="BVSEO" />
           </div>
 
-          <div className="message-box">
-            <div className="message-box-text">
-              <span className="warning-text">Warning: </span><span className='message-text'>BVQA Container not detected on this page.</span>
-            </div>
-          </div>
+          <MessageBox selected="BVRRContainer" />
 
         </div>
 
