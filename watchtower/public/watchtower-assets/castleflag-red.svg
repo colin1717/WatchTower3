@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="119px" height="100px" viewBox="0 0 119 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Castle Flag Red</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy" transform="translate(-582.000000, -445.000000)">
+            <g id="Castle-Flag-Red" transform="translate(582.000000, 445.000000)">
+                <path d="M43,70.5 L43,3.5" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M0,100 L0,66.7218539 L9.954,64.7540146 L9.954,74.5620506 L24.5080765,71.9271858 L24.5080765,61.8767709 L36.9764424,59.4118582 L36.9764424,69.9225425 L51.5305189,67.2876777 L51.5305189,56.5346145 L59.25,55.0085246 L59.25,55 L59.25,100 L-2.22044605e-16,100 Z M59.25,100 L59.25,55 L59.25,55.0085246 L66.9694811,56.5346145 L66.9694811,67.2876777 L81.5235576,69.9225425 L81.5235576,59.4118582 L93.9919235,61.8767709 L93.9919235,71.9271858 L108.546,74.5620506 L108.546,64.7540146 L118.5,66.7218539 L118.5,100 L59.25,100 Z M102,17.5 L42,35 L42,0 L102,17.5 Z" id="Combined-Shape" fill="#EE5164"></path>
+            </g>
+        </g>
+    </g>
+</svg>

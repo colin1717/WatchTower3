@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+.header {
+  height: 450px;
+  width: 100%;
+  background: url('./watchtower-assets/header-gradient.png') no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.8);
+  z-index: 1;
+}
+
+.logo-div {
+  background: url(./watchtower-assets/watchtower-logo.svg) center no-repeat;
+  display: flex;
+  justify-content: center;
+  height: 340px;
+  width: 100%;
+}
+
+.logo-text {
+  color: white;
+  font-family: Arial;
+  font-size: 30pt;
+  padding-top: 288px;
+}
+
+.form-input {
+  display: flex;
+  justify-content: center;
+  margin: 30px 100px ;
+}
+
+/* Client name input */
+.client-dropdown {
+  height: 50px;
+  width: 300px;
+  min-width: 180px;
+  background-color: #003D4D;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  margin-right: 20px;
+  padding-left: 8px;
+}
+
+.client-dropdown input {
+  width: 95%;
+  background-color: #003D4D;
+  padding-top: 10px;
+  padding-left: 6px;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 16pt;
+}
+
+.client-dropdown input:focus {
+  outline: none;
+}
+
+/* PDP URL input */
+.pdp-input {
+  height: 50px;
+  width: 700px;
+  min-width: 660px;
+  background-color: #003D4D;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.pdp-input input {
+  width: 81%;
+  background-color: #003D4D;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 16pt;
+}
+
+.pdp-input input:focus {
+  outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+  float: right;
+  height: 26px;
+  width: 90px;
+  background-color: #003D4D;
+  border: solid 2px #33BCA5;
+  margin-right: 8px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  color: #33BCA5;
+  font-family: Arial;
+  font-size: 14pt;
+  font-weight: lighter;
+  padding-top: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+.submit-button:hover {
+  float: right;
+  height: 24px;
+  width: 90px;
+  background-color: #33BCA5;
+  border: solid 2px #33BCA5;
+  margin-right: 8px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: Arial;
+  font-size: 14pt;
+  font-weight: lighter;
+  padding-top: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+/* Results */
+
+.results-display {
+  height: 900px;
+  width: 100%;
+  background-color: #003D4D;
+  padding-top: 50px;
+  z-index: 0;
+  text-align: center;
+}
+
+.display-features-text {
+  color: white;
+  font-size: 24pt;
+}
+
+.display-features-castles {
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.castle {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.castle-pic {
+  background: url('./watchtower-assets/castleflag-green.svg') no-repeat center;
+  height: 100px;
+  width: auto;
+}
+
+.castle-pic-warning {
+  background: url('./watchtower-assets/castleflag-red.svg') no-repeat center;
+  height: 100px;
+  width: auto;
+}
+
+.castle-text {
+  height: 30px;
+  width: auto;
+  font-size: 18pt;
+  color: white;
+  background-color: #003D4D;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 4px 10px 0px 10px;
+  min-width: 180px;
+}
+
+.castle-text-warning {
+  height: 30px;
+  width: auto;
+  font-size: 18pt;
+  color: #EE5164;
+  background-color: #003D4D;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 4px 10px 0px 10px;
+  min-width: 180px;
+}
+
+/* Message-box */
+
+.message-box::before {
+  height: 43px;
+  width: 43px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  box-sizing: border-box;
+  position: absolute;
+  top:-20%;
+  left: 70%;
+  transform: rotate(45deg);
+  content: "";
+  background-color: #003D4D;
+}
+
+.message-box {
+  position: relative;
+  height: 120px;
+  width: 1000px;
+  border: 2px white solid;
+  margin: auto;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+.message-box-text {
+  font-size: 20pt;
+  padding-top: 40px;
+  color: white;
+}
+
+.warning-text {
+  color: #EE5164;
+}
+
+/* Collection Features */
+
+.collection-features {
+  padding-top: 50px;
+}
+
+.collection-features-text {
+  color: white;
+  font-size: 24pt;
+}
+
+.collection-features .message-box::before {
+  height: 43px;
+  width: 43px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  box-sizing: border-box;
+  position: absolute;
+  top:-20%;
+  left: 63%;
+  transform: rotate(45deg);
+  content: "";
+  background-color: #003D4D;
+}
+
+footer {
+  background: url('./watchtower-assets/header-gradient.png') no-repeat;
+  background-size: cover;
+  height: 60px;
+  width: 100%;
+}
