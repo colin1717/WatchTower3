@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "./css/Header.css";
-import ClientDropdown from './ClientDropdown';
 import PDPInput from './PDPInput';
 
 class Header extends Component {
@@ -11,10 +10,7 @@ class Header extends Component {
           <span className='logo-text'>WatchTower</span>
         </div>
 
-        <div className="form-input">
-          <ClientDropdown />
-          <PDPInput />
-        </div>
+        <PDPInput />
 
       </div>
     )
