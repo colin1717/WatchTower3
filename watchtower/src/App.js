@@ -7,10 +7,16 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
-        <ResultsDisplay />  
+        <Header fetchData={this._fetchData.bind(this)}/>
+        <ResultsDisplay />
       </div>
     );
+  }
+
+  _fetchData(clientName, PDPUrl) {
+    console.log(`=====App.js fetchData======`);
+    console.log(`GET URL: %c http://127.0.0.1:8000/clients/${clientName}/${PDPUrl}`, 'color: #ff0000');
+
   }
 }
 

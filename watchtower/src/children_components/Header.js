@@ -10,7 +10,7 @@ class Header extends Component {
           <span className='logo-text'>WatchTower</span>
         </div>
 
-        <PDPInput />
+        <PDPInput fetchData={this.props.fetchData}/>
 
       </div>
     )
