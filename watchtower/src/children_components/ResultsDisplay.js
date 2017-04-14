@@ -19,12 +19,12 @@ class ResultsDisplay extends Component {
         <div className="display-features">
           <span className='display-features-text'>Display Features</span>
           <div className="display-features-castles">
-            <Castle title="BVAPI" handleClick={this._handleClickDisplayFeatures.bind(this)}/>
-            <Castle title="BVRRSummary" warning='null' handleClick={this._handleClickDisplayFeatures.bind(this)}/>
-            <Castle title="BVRR Container" handleClick={this._handleClickDisplayFeatures.bind(this)}/>
+            <Castle title="BVAPI" warning={this.props.data["Javascript URL"].status ? 'null' : 'warning'} handleClick={this._handleClickDisplayFeatures.bind(this)}/>
+            <Castle title="BVRRSummary" warning={this.props.data["BVRRSummary Container Has Content"] ? "null" : 'warning'} handleClick={this._handleClickDisplayFeatures.bind(this)}/>
+            <Castle title="BVRR Container" warning={this.props.data["BVRR Container Has Content"] ? "null" : 'warning'} handleClick={this._handleClickDisplayFeatures.bind(this)}/>
 
-            <Castle title="BVQA Container" warning='warning' handleClick={this._handleClickDisplayFeatures.bind(this)}/>
-            <Castle title="BVSEO" handleClick={this._handleClickDisplayFeatures.bind(this)}/>
+            <Castle title="BVQA Container" warning={this.props.data["BVQA Container Has Content"] ? "null" : 'warning'} handleClick={this._handleClickDisplayFeatures.bind(this)}/>
+            <Castle title="BVSEO" warning={this.props.data["SEO Content Loading"] ? "null" : 'warning'} handleClick={this._handleClickDisplayFeatures.bind(this)}/>
           </div>
 
           <MessageBox selected={this.state.activeDisplayFeaturesTab} />
