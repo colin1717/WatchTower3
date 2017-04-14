@@ -1,38 +1,6 @@
-let testData = {
-  'BVQA Container Has Content':false,
-  'BVQA Container Loading':true,
-  'BVRR Container Has Content':true,
-  'BVRR Container Loading':true,
-  'BVRRSummary Container Has Content':false,
-  'BVRRSummary Container Loading':true,
-  'Javascript URL':
-    {
-      msg:"display.ugc.bazaarvoice.com/static/maxtool/en_US/bvapi.js",
-      status:true,
-      title:"Javascript URL"
-    },
-    'Last Modified':
-    {
-      msg: "2017-01-30T17:20:42.134+0000",
-      status: true,
-      title: "Last Modified"
-    },
-
-  'Production Container URL':
-    {
-      msg: "http://www.maxtool.com/container.html",
-      status: true,
-      title: "Production Container URL"
-    },
-
-  'SEO Content Loading': true,
-  'SEO Pagination Working': false,
-  'Staging Container URL':
-    {
-      msg: "http://max-stage.corrastage.com/container.html",
-      status: true,
-      title: "Staging Container URL"
-    }
-}
-
-export default testData;
+let testData = [{"status": true, "title": "Most Recent Implementation", "msg": "ea4e9728-d587-4067-bd3c-5322e841eb79"}, {"status": true, "title": "Last Modified", "msg": "2017-01-18T09:55:27.906+0000"}, {"status": true, "title": "Production Container
+URL", "msg": "https://www.craftsy.com/bazaarvoice-container.html"}, {"status": true, "title": "Staging Container URL", "msg": "https://craftsy.test.sympoz.net/bazaarvoice-container-stg.html"}, {"status": true, "title": "PIE Enable"}, {"status": true,
+"title": "Follow Up PIE Enabled"}, {"status": false, "title": "QA Enabled"}, {"status": true, "title": "Javascript Present", "msg": "Javascript loaded on page"}, {"status": true, "title": "Javascript URL", "msg": "display.ugc.bazaarvoice.com/static/craftsy/en_US/bvapi.js"},
+{"status": true, "title": "Javascript Name Match", "msg": ""}, {"status": true, "title": "Javascript Environment", "msg": "Production"}, {"status": true, "title": "Javascript Server Response", "msg": 200}, {"status": true, "title": "BVRR Container Loading",
+"msg": ""}, {"status": true, "title": "BVRR Container Has Content", "msg": ""}, {"status": true, "title": "BVRRSummary Container Loading", "msg": ""}, {"status": true, "title": "BVRRSummary Container Has Content", "msg": ""}, {"status": false, "title":
+"BVQA Container Loading", "msg": ""}, {"status": false, "title": "BVQA Container Has Content", "msg": ""}, {"status": false, "title": "SEO Content Loading", "msg": ""}, {"status": false, "title": "SEO Pagination Working", "msg": ""}]; export default testData;
