@@ -20,7 +20,7 @@ class ResultsDisplay extends Component {
           <span className='display-features-text'>Display Features</span>
           <div className="display-features-castles">
             <Castle title="BVAPI" handleClick={this._handleClickDisplayFeatures.bind(this)}/>
-            <Castle title="BVRRSummary" handleClick={this._handleClickDisplayFeatures.bind(this)}/>
+            <Castle title="BVRRSummary" warning='null' handleClick={this._handleClickDisplayFeatures.bind(this)}/>
             <Castle title="BVRR Container" handleClick={this._handleClickDisplayFeatures.bind(this)}/>
 
             <Castle title="BVQA Container" warning='warning' handleClick={this._handleClickDisplayFeatures.bind(this)}/>

@@ -6,11 +6,26 @@ import $ from 'jquery';
 import * as sortData from './sortData';
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      data: {}
+    }
+  }
+
   render() {
+    let showData;
+    if ($.isEmptyObject(this.state.data) === false) {
+      showData = <ResultsDisplay data={this.state.data}/>;
+    } else {
+      showData = <div className="results-display" /> 
+    }
+
     return (
       <div>
         <Header fetchData={this._fetchData.bind(this)}/>
-        <ResultsDisplay />
+        {showData}
       </div>
     );
   }
@@ -22,7 +37,7 @@ class App extends Component {
     $.ajax({
       method: "GET",
       url: `http://127.0.0.1:8000/clients/${clientName}/${PDPUrl}`,
-      success: ((data) => { sortData.sortData(data) })
+      success: ((data) => { this._saveDataToState(sortData.sortData(data)) })
     })
   }
 
