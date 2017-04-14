@@ -3,6 +3,7 @@ import './App.css';
 import Header from './children_components/Header';
 import ResultsDisplay from './children_components/ResultsDisplay';
 import $ from 'jquery';
+import * as sortData from './sortData';
 
 class App extends Component {
   render() {
@@ -21,9 +22,16 @@ class App extends Component {
     $.ajax({
       method: "GET",
       url: `http://127.0.0.1:8000/clients/${clientName}/${PDPUrl}`,
-      success: ((data) => { console.log(data) })
+      success: ((data) => { sortData.sortData(data) })
     })
   }
+
+  _saveDataToState(data){
+  this.setState({
+    data: data
+  });
+}
+
 }
 
 export default App;
