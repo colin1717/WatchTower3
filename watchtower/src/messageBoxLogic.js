@@ -1,4 +1,4 @@
-function messageBoxMessageLogic(selected, data) {
+export function messageBoxMessageLogic(selected, data) {
 
   //BVQA Container condition
   if (selected === "BVQA Container") {
@@ -71,5 +71,65 @@ function messageBoxMessageLogic(selected, data) {
   }
 }
 
+export function messageBoxMessageWarningTextLogic(selected, data) {
 
-export default messageBoxMessageLogic;
+  //BVQA Container condition
+  if (selected === "BVQA Container") {
+
+    if (data["BVQA Container Has Content"]) {
+      return null
+    } else if (!data["BVQA Container Has Content"] && data["BVQA Container Loading"]) {
+      return "Warning: "
+    } else {
+      return "Warning: "
+    }
+  }
+
+  //BVRR Summary condition
+  else if (selected === "BVRRSummary") {
+
+    if (data["BVRRSummary Container Has Content"]) {
+      return null
+    } else if (!data["BVRRSummary Container Has Content"] && data["BVRRSummary Container Loading"]) {
+      return "Warning: "
+    } else {
+      return "Warning: "
+    }
+  }
+
+  //BVRR Container condidtion
+  else if (selected === "BVRR Container") {
+
+    if (data["BVRR Container Has Content"]) {
+      return null
+    } else if (!data["BVRR Container Has Content"] && data["BVRR Conainer Loading"]) {
+      return "Warning: "
+    } else {
+      return "Warning: "
+    }
+  }
+
+  //BVSEO Container condition
+  else if (selected === "BVSEO") {
+
+    if (data["SEO Content Loading"] && data["SEO Pagination Working"]) {
+      return null
+    } else if (data["SEO Content Loading"] && !data["SEO Pagination Working"]) {
+      return "Warning: "
+    } else if (!data["SEO Content Loading"] && data["SEO Pagination Working"]) {
+      return "Warning: "
+    } else {
+      return "Warning: "
+    }
+  }
+
+  //BVAPI Condition
+  else if (selected === "BVAPI") {
+
+    if (data['Javascript URL'].status) {
+      null
+    } else {
+      return "Warning: "
+    }
+  }
+}
