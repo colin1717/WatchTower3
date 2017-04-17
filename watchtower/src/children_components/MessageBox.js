@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './css/MessageBox.css';
+import messageBoxMessageLogic from '../messageBoxLogic';
 
 class MessageBox extends Component {
   render() {
@@ -26,7 +27,7 @@ class MessageBox extends Component {
     return (
       <div className={activeTab}>
         <div className="message-box-text">
-          <span className="warning-text">Warning: </span><span className='message-text'>BVQA Container not detected on this page.</span>
+          <span className="warning-text">Warning: </span><span className='message-text'>{messageBoxMessageLogic(this.props.selected, this.props.data)}</span>
         </div>
       </div>
     )

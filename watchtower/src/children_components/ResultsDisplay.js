@@ -27,7 +27,7 @@ class ResultsDisplay extends Component {
             <Castle title="BVSEO" warning={this.props.data["SEO Content Loading"] ? "null" : 'warning'} handleClick={this._handleClickDisplayFeatures.bind(this)}/>
           </div>
 
-          <MessageBox selected={this.state.activeDisplayFeaturesTab} />
+          <MessageBox selected={this.state.activeDisplayFeaturesTab} message="testtesetBVQA Container not detected" data={this.props.data}/>
 
         </div>
 
@@ -35,11 +35,11 @@ class ResultsDisplay extends Component {
           <span className='collection-features-text'>Collection Features</span>
           <div className="display-features-castles">
 
-            <Castle title="Staging Container Page" warning={(this.props.data["Staging Container URL"].msg == 'BV Hosted') ? 'warning' : 'null'} handleClick={this._handleClickCollectionFeatures.bind(this)} />
-            <Castle title="Production Container Page" warning={(this.props.data["Production Container URL"].msg == "BV Hosted") ? 'warning' : 'null'}  handleClick={this._handleClickCollectionFeatures.bind(this)} />
+            <Castle title="Staging Container Page" warning={(this.props.data["Staging Container URL"].msg === 'BV Hosted') ? 'warning' : 'null'} handleClick={this._handleClickCollectionFeatures.bind(this)} />
+            <Castle title="Production Container Page" warning={(this.props.data["Production Container URL"].msg === "BV Hosted") ? 'warning' : 'null'}  handleClick={this._handleClickCollectionFeatures.bind(this)} />
           </div>
 
-          <MessageBox selected={this.state.activeCollectionFeaturesTab} />
+          <MessageBox selected={this.state.activeCollectionFeaturesTab} message="testtesetBVQA Container not detected" data={this.props.data}/>
         </div>
 
       </div>
