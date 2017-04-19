@@ -22,6 +22,7 @@ class PDPInput extends Component {
     console.log(`clientName: ${clientName}`);
     console.log(`PDPUrl: ${PDPUrl}`);
     this.props.fetchData(clientName, PDPUrl);
+    this.props.showLoadingAnimation();
   }
 }
 

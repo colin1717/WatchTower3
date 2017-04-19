@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './children_components/Header';
 import ResultsDisplay from './children_components/ResultsDisplay';
+import LoadingAnimation from './children_components/LoadingAnimation';
 import $ from 'jquery';
 import * as sortData from './sortData';
 
@@ -10,7 +11,8 @@ class App extends Component {
     super();
 
     this.state = {
-      data: {}
+      data: {},
+      loading: false
     }
   }
 
@@ -18,13 +20,15 @@ class App extends Component {
     let showData;
     if ($.isEmptyObject(this.state.data) === false) {
       showData = <ResultsDisplay data={this.state.data}/>;
+    } else if (this.state.loading){
+      showData = <div className="results-display"><LoadingAnimation/></div>
     } else {
-      showData = <div className="results-display" /> 
+      showData = <div className="results-display" />
     }
 
     return (
       <div>
-        <Header fetchData={this._fetchData.bind(this)}/>
+        <Header fetchData={this._fetchData.bind(this)} showLoadingAnimation={this._showLoadingAnimation.bind(this)} />
         {showData}
       </div>
     );
@@ -42,10 +46,17 @@ class App extends Component {
   }
 
   _saveDataToState(data){
-  this.setState({
-    data: data
-  });
-}
+    this.setState({
+      data: data,
+      loading: false
+    });
+  }
+
+  _showLoadingAnimation(){
+    this.setState({
+      loading: true
+    })
+  }
 
 }
 
